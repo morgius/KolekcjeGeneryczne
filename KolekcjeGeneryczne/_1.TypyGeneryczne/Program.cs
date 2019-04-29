@@ -10,6 +10,8 @@ namespace _1.TypyGeneryczne
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(4 % 5);
+            Console.ReadLine();
         }
     }
 }
