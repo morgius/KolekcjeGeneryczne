@@ -19,7 +19,7 @@
             poczatekBufora = 0;
             koniecBufora = 0;
         }
-        public void Zapisz(int wartosc)
+        public void Zapisz(double wartosc)
         {
             bufor[koniecBufora] = wartosc;
             koniecBufora = (koniecBufora + 1) % bufor.Length;

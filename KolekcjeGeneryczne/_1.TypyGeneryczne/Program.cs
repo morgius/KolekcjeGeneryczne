@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _1.TypyGeneryczne
 {
@@ -10,7 +6,23 @@ namespace _1.TypyGeneryczne
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(4 % 5);
+            KolejkaKolowa kolejka = new KolejkaKolowa(3);
+            while (true)
+            {
+                double wynik = 0.0;
+                string wartoscWejsciowa = Console.ReadLine();
+                if(double.TryParse(wartoscWejsciowa,out wynik))
+                {
+                    kolejka.Zapisz(wynik);
+                    continue;
+                }
+                break;
+            }
+            Console.WriteLine("W kolejce:");
+            while (!kolejka.JestPusty)
+            {
+                Console.WriteLine(kolejka.Czytaj());
+            }
             Console.ReadLine();
         }
     }
