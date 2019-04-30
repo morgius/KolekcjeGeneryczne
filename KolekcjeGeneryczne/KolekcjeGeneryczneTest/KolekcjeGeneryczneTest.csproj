@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CFC64457-2BC6-4968-9E29-81D0AB615A2A}</ProjectGuid>
+    <ProjectGuid>{BB5292F1-DC49-4F01-A27E-DF3FDAC22760}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TypyGeneryczneTest</RootNamespace>
-    <AssemblyName>TypyGeneryczneTest</AssemblyName>
+    <RootNamespace>KolekcjeGeneryczneTest</RootNamespace>
+    <AssemblyName>KolekcjeGeneryczneTest</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,18 +49,11 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KolejkaKolowaTest.cs" />
-    <Compile Include="KolejkaTest.cs" />
+    <Compile Include="ListaTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\_1.TypyGeneryczne\1.TypyGeneryczne.csproj">
-      <Project>{00933f23-7e90-4ff0-83a2-652e55991436}</Project>
-      <Name>1.TypyGeneryczne</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
